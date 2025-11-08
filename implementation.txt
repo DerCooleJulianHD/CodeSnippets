@@ -1,0 +1,6 @@
+// Repository:
+
+maven {
+  name = "CodeSnippets"
+  url = uri("https://github.com/DerCooleJulianHD/CodeSnippets");
+}
