@@ -23,7 +23,7 @@ public final class QuickSort extends ArraySort {
         int leftPointer = lowIndex;
         int rightpointer = highIndex;
 
-        // partioning
+        // portioning
         while (leftPointer < rightpointer) {
             while (input[leftPointer] <= pivot && leftPointer < rightpointer) leftPointer++;
             while (input[rightpointer] >= pivot && leftPointer < rightpointer) rightpointer--;
@@ -33,7 +33,7 @@ public final class QuickSort extends ArraySort {
 
         swap(input, leftPointer, highIndex);
 
-        // recursivly recalling
+        // recursively recalling
         sort(input, lowIndex, leftPointer -1);
         sort(input, leftPointer + 1, highIndex);
     }
